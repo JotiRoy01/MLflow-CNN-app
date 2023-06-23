@@ -1,0 +1,93 @@
+[2023-06-22 21:57:26,826: INFO: stage__00__template]: 
+********************
+[2023-06-22 21:57:26,826: INFO: stage__00__template]: >>>>> stage STAGE_NAME started <<<<<
+[2023-06-22 21:57:26,828: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-06-22 21:57:26,828: INFO: common]: yaml file: params.yaml loaded successfully
+[2023-06-22 21:57:26,828: INFO: stage__00__template]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2023-06-22 21:57:50,525: INFO: stage__00__template]: 
+********************
+[2023-06-22 21:57:50,525: INFO: stage__00__template]: >>>>> stage STAGE_NAME started <<<<<
+[2023-06-22 21:57:50,527: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-06-22 21:57:50,527: INFO: common]: yaml file: params.yaml loaded successfully
+[2023-06-22 21:57:50,527: INFO: stage__00__template]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2023-06-22 22:01:16,662: INFO: stage__00__template]: 
+********************
+[2023-06-22 22:01:16,662: INFO: stage__00__template]: >>>>> stage TEMPLATE started <<<<<
+[2023-06-22 22:01:16,663: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-06-22 22:01:16,663: INFO: common]: yaml file: params.yaml loaded successfully
+[2023-06-22 22:01:16,663: INFO: stage__00__template]: >>>>> stage TEMPLATE completed!<<<<<
+
+[2023-06-22 22:38:14,182: INFO: stage__01__template]: 
+********************
+[2023-06-22 22:38:14,182: INFO: stage__01__template]: >>>>> stage TEMPLATE started <<<<<
+[2023-06-22 22:38:14,183: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-06-22 22:38:14,183: INFO: common]: yaml file: params.yaml loaded successfully
+[2023-06-22 22:38:14,183: INFO: stage__01__template]: >>>>> stage TEMPLATE completed!<<<<<
+
+[2023-06-23 12:56:50,896: INFO: stage__01__template]: 
+********************
+[2023-06-23 12:56:50,896: INFO: stage__01__template]: >>>>> stage TEMPLATE started <<<<<
+[2023-06-23 12:56:50,896: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-06-23 12:56:50,897: INFO: common]: yaml file: params.yaml loaded successfully
+[2023-06-23 12:56:50,897: INFO: stage__01__template]: >>>>> stage TEMPLATE completed!<<<<<
+
+[2023-06-23 22:09:26,309: INFO: stage__01__template]: 
+********************
+[2023-06-23 22:09:26,310: INFO: stage__01__template]: >>>>> stage TEMPLATE started <<<<<
+[2023-06-23 22:09:26,310: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-06-23 22:09:26,310: INFO: common]: created directory at: data
+[2023-06-23 22:09:26,310: INFO: common]: yaml file: params.yaml loaded successfully
+[2023-06-23 22:09:26,310: INFO: stage__01__template]: >>>>> stage TEMPLATE completed!<<<<<
+
+[2023-06-23 22:17:22,186: INFO: stage__01__template]: 
+********************
+[2023-06-23 22:17:22,186: INFO: stage__01__template]: >>>>> stage TEMPLATE started <<<<<
+[2023-06-23 22:17:22,187: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-06-23 22:17:22,187: INFO: common]: created directory at: data
+[2023-06-23 22:17:22,187: INFO: common]: yaml file: params.yaml loaded successfully
+[2023-06-23 22:17:22,187: ERROR: stage__01__template]: 'unzip_data_dir'
+Traceback (most recent call last):
+  File "/home/joti/Documents/DL/ML_Flow/cnn-app21.6.23/MLflow-CNN-app/src/stage__01__template.py", line 47, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "/home/joti/Documents/DL/ML_Flow/cnn-app21.6.23/MLflow-CNN-app/src/stage__01__template.py", line 32, in main
+    unzip_data_dir = config["data"]["unzip_data_dir"]
+KeyError: 'unzip_data_dir'
+[2023-06-23 22:18:53,102: INFO: stage__01__template]: 
+********************
+[2023-06-23 22:18:53,102: INFO: stage__01__template]: >>>>> stage TEMPLATE started <<<<<
+[2023-06-23 22:18:53,102: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-06-23 22:18:53,102: INFO: common]: created directory at: data
+[2023-06-23 22:18:53,102: INFO: common]: yaml file: params.yaml loaded successfully
+[2023-06-23 22:18:53,102: ERROR: stage__01__template]: 'unzip_data_dir'
+Traceback (most recent call last):
+  File "/home/joti/Documents/DL/ML_Flow/cnn-app21.6.23/MLflow-CNN-app/src/stage__01__template.py", line 47, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "/home/joti/Documents/DL/ML_Flow/cnn-app21.6.23/MLflow-CNN-app/src/stage__01__template.py", line 32, in main
+    unzip_data_dir = config["data"]["unzip_data_dir"]
+KeyError: 'unzip_data_dir'
+[2023-06-24 05:41:46,832: INFO: stage__01__template]: 
+********************
+[2023-06-24 05:41:46,832: INFO: stage__01__template]: >>>>> stage TEMPLATE started <<<<<
+[2023-06-24 05:41:46,832: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-06-24 05:41:46,832: INFO: common]: created directory at: data
+[2023-06-24 05:41:46,833: INFO: common]: yaml file: params.yaml loaded successfully
+[2023-06-24 05:41:46,833: ERROR: stage__01__template]: 'unzip_data_dir'
+Traceback (most recent call last):
+  File "/home/joti/Documents/DL/ML_Flow/cnn-app21.6.23/MLflow-CNN-app/src/stage__01__template.py", line 47, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "/home/joti/Documents/DL/ML_Flow/cnn-app21.6.23/MLflow-CNN-app/src/stage__01__template.py", line 32, in main
+    unzip_data_dir = config["data"]["unzip_data_dir"]
+KeyError: 'unzip_data_dir'
+[2023-06-24 05:43:39,960: INFO: stage__01__template]: 
+********************
+[2023-06-24 05:43:39,960: INFO: stage__01__template]: >>>>> stage TEMPLATE started <<<<<
+[2023-06-24 05:43:39,960: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2023-06-24 05:43:39,960: INFO: common]: created directory at: data
+[2023-06-24 05:43:39,961: INFO: common]: yaml file: params.yaml loaded successfully
+[2023-06-24 05:43:39,961: INFO: common]: created directory at: data
+[2023-06-24 05:43:39,961: INFO: common]: extraction started........
+[2023-06-24 05:43:44,520: INFO: common]: extrated data/data.zip to: data
+[2023-06-24 05:43:44,523: INFO: stage__01__template]: >>>>> stage TEMPLATE completed!<<<<<
+
