@@ -4,6 +4,10 @@ mlflow
 pandas
 numpy
 PyYAML
-
+pillow
+tensorflow
+tensorflow-io
+keras
+keras-preprocessing
 ### local packages -
  -e . # << uncomment this to install from setup.py
