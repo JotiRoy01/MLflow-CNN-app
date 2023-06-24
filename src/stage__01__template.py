@@ -6,6 +6,7 @@ import logging
 from src.utils.common import read_yaml, create_directories,unzip_file
 import random
 import urllib.request as req
+from src.utils.data_mgmt import validating_image
 
 
 STAGE = "TEMPLATE" ## <<< change stage name 
@@ -29,10 +30,16 @@ def main(config_path, params_path):
     print(config)
     params = read_yaml(params_path)
     
+    #Unzip ops
     unzip_data_dir = config["data"]["unzip_data_dir"]
     create_directories([unzip_data_dir])
 
     unzip_file(source=data_file_path, dest=unzip_data_dir)
+
+    #valadating data
+    validating_image(config)
+    logging.info("Validating_image data pass")
+
 
 
 if __name__ == '__main__':
