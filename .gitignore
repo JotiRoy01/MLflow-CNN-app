@@ -142,3 +142,5 @@ mlruns/
 data/
 running_logs.log
 PetImages/
+logs/*.log
+logs/
