@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ```bash
 conda env export > conda.yaml
 ```
-'''
+'''bash 
 name: MLProject
 
 conda_env: conda.yaml
@@ -50,7 +50,7 @@ entry_points:
     command: "python src/stage_02_base_model_creation.py --config={config}"
     '''
 
-'''
+'''bash
 MLprojects
 if you try to execute mlflow project without conda environment ->>>
 first try to : 
@@ -62,7 +62,7 @@ def main():
 and comman line type:
 mlflow run . --env-manager="local"
 '''
-'''
+'''bash
 single command execution:
 mlflow run . -e get_data -P config=configs/config.yaml --no-conda/--env-manager="local"
 '''
