@@ -30,5 +30,40 @@ pip install -r requirements.txt
 ```bash
 conda env export > conda.yaml
 ```
+'''
+name: MLProject
 
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    command: "python src/main.py"
+
+  get_data:
+    parameters:
+      config: {type: str , default: "configs/config.yaml"}
+    command: "python src/stage__01__template.py --config={config}"
+
+  base_model_creation:
+    parameters:
+      config: {type: str , default: "configs/config.yaml"}
+    command: "python src/stage_02_base_model_creation.py --config={config}"
+    '''
+
+'''
+MLprojects
+if you try to execute mlflow project without conda environment ->>>
+first try to : 
+def main():
+    with mlflow.start_run() as run :
+        mlflow.run(".","get_data",env_manager="local")
+        mlflow.run(".","base_model_creation",env_manager="local")
+
+and comman line type:
+mlflow run . --env-manager="local"
+'''
+'''
+single command execution:
+mlflow run . -e get_data -P config=configs/config.yaml --no-conda/--env-manager="local"
+'''
 ### STEP 06- commit and push the changes to the remote repository
