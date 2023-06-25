@@ -31,7 +31,8 @@ pip install -r requirements.txt
 conda env export > conda.yaml
 ```
 ### Remember
- conda name: MLProject
+ '''bash
+ name: MLProject
 conda_env: conda.yaml
 
 entry_points:
