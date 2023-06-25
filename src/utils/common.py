@@ -16,7 +16,7 @@ def read_yaml(path_to_yaml: str) -> dict:
 def create_directories(path_to_directories: list) -> None:
     for path in path_to_directories:
         os.makedirs(path, exist_ok=True)
-        logging.info(f"created directory at: {path}")
+    logging.info(f"created directory at: {path}")
 
 
 def save_json(path: str, data: dict) -> None:
